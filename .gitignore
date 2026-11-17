@@ -1,0 +1,10 @@
+node_modules/
+samples/
+frames/
+tools/_extract.js
+*.log
+
+# large media are published as GitHub Release assets, not committed
+星尘独白.mp4
+soundtrack.wav
+*.mp4

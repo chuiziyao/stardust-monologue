@@ -1,0 +1,12 @@
+{
+  "name": "stardust-monologue",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "星尘独白 · STARDUST MONOLOGUE — a cinematic web short film",
+  "license": "MIT",
+  "dependencies": {
+    "fzstd": "^0.1.1",
+    "puppeteer-core": "^25.17.0"
+  }
+}
