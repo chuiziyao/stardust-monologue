@@ -8,7 +8,7 @@
 [![Film](https://img.shields.io/badge/film-5%3A00%20·%209%20chapters-3fe0b0.svg)](#九幕)
 
 - **在线演示（GitHub Pages）**：<https://chuiziyao.github.io/stardust-monologue/>
-- **成片下载**：[stardust-monologue-1080p24.mp4](https://github.com/chuiziyao/stardust-monologue/releases/download/v1.0.0/stardust-monologue-1080p24.mp4)（1920×1080 · 24 fps · H.264 + AAC · 5:00 · 773 MB）
+- **成片下载**：[stardust-monologue-1080p24.mp4](https://github.com/chuiziyao/stardust-monologue/releases/download/v1.0.0/stardust-monologue-1080p24.mp4)（1920×1080 · 24 fps · H.264 + AAC · 5:00 · 364 MB）
 - **本地运行**：克隆后双击 `index.html`，点击「开始放映」。建议佩戴耳机（含程序化配乐，默认开启，可一键静音）。
 - **无需联网、无需构建**：单文件网页 + 本地字体子集，离线即可完整播放。
 - **配乐母带**：[stardust-score.wav](https://github.com/chuiziyao/stardust-monologue/releases/download/v1.0.0/stardust-score.wav)（44.1 kHz 立体声 · 5:00 · 由网页同一份乐谱离线渲染）
@@ -23,7 +23,7 @@
 | --- | --- |
 | 时长 | 5 分 00 秒（300.0 s） |
 | 分辨率 / 帧率 | 1920×1080 / 24 fps |
-| 视频编码 | H.264（AMD AMF 硬件编码，CQP 18）· yuv420p · +faststart |
+| 视频编码 | H.264（AMD AMF 硬件编码，VBR ~10 Mbps）· yuv420p · +faststart |
 | 音频编码 | AAC 192 kbps · 44.1 kHz 立体声 |
 | 画面来源 | 网页时间轴逐帧 seek 截图 7200 帧（无头 Chrome + **GPU 硬件 WebGL**），与网页逐帧一致 |
 | 配乐 | 网页同一份乐谱离线渲染（`soundtrack.wav`），与画面墙钟同步 |

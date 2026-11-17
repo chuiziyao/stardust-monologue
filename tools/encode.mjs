@@ -12,7 +12,7 @@ if (frames.length < TOTAL) { console.error("incomplete frames; run capture first
 
 function args(enc) {
   const v = enc === "amf"
-    ? ["-c:v", "h264_amf", "-quality", "quality", "-rc", "cqp", "-qp_i", "18", "-qp_p", "18", "-qp_b", "18", "-pix_fmt", "yuv420p"]
+    ? ["-c:v", "h264_amf", "-usage", "transcoding", "-quality", "quality", "-rc", "vbr_peak", "-b:v", "10M", "-maxrate", "16M", "-bufsize", "20M", "-pix_fmt", "yuv420p"]
     : ["-c:v", "libx264", "-preset", "slow", "-crf", "20", "-pix_fmt", "yuv420p", "-profile:v", "high", "-level", "4.1"];
   return ["-y", "-framerate", String(FPS), "-i", "frames/f%05d.jpg", "-i", "soundtrack.wav",
     ...v, "-c:a", "aac", "-b:a", "192k", "-ar", "44100", "-shortest", "-movflags", "+faststart", OUT];
